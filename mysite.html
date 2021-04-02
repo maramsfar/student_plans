@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="site.css">
+<title>Student Plans</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="pf.css">
+</head>
+<body>
+  <header>
+    <img id="img1" src="111.png" alt="balloun1">
+    <a href="file:///C:/Users/LENOVO/Desktop/code/mysite.html#"><p class="titres">Home</p></a>
+    <a href="file:///C:/Users/LENOVO/Desktop/code/aboutus.html"><p class="titres">About us</p></a>                 
+    <p  onclick="window.location = 'mailto:sp@gamil.com';" class="titres">Contact us</p>  
+    <script src="pf.js"></script>
+</header>
+<div class="buttons fadein nav-scrolled">
+  <a href="#scroll"><button id="button1"  type="button">Timetable</button></a>
+  <a href="#scroll"><button  id="button2" type="button">Notifications</button></a>
+ <a href="#scroll"> <button  id="button3" type="button">Courses</button></a>
+<a href="#scroll"><button id="button4"  type="button">Reminder</button></a>
+
+</div>
+<div>
+ 
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="roller/1.png" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="roller/2.png" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="roller/3.png" style="width:100%">
+  
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div></div>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+<div  id="scroll" class="firstdiv fadein"  >
+  <div  class="firstright">
+      
+      <h1 class="anim1">Student plans</h1>
+      <h3>A plateforme for online education</h3>
+      <div>
+      <button  onclick="signin()"   class="button1" type="button">Sign in</button>
+      <button  onclick="login()" class="button2" type="button">Login  </button></div>
+  </div>
+  <div>
+      <img  id="puzz" src="2.png" alt="puzzle">
+
+  </div>
+
+</div>
+<img id="img2" src=333.png alt="balloun2">
+<div  class="secdiv fadein">
+<h1 id="title2">How SP works... it's simple!</h1>
+<h3>Access easily  to your courses and get more chances to be brilliant</h3>
+<video  class="video"  width="1000" height="auto" controls autoplay >
+  <source src="How does online learning work_.mp4" type="video/mp4">
+</video>
+
+</div>
+
+<div class="testtt fadein">
+  <div>
+  <div class="last">
+      <h2>Your comment </h2>
+      <img class="icon" src="8.png" alt="paroles">
+  </div>
+  <textarea cols="90" rows="7" name="comment" placeholder="click here" > </textarea><br>
+  <button id="send" type="button">Send </button>
+</div>
+<video  class="video"  width="1000" height="auto" controls autoplay , loop>
+  <source src="student plans.mp4" type="video/mp4">
+</video>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="mylastdiv fadein">
+<div id="butts">
+  <button onclick="signin()" class="button1" type="button">Sign in</button>
+   <button onclick="login()" class="button2" type="button">Login  </button>
+</div>
+<a href="#" ><img  class="up" src="up.png" alt="up"></a>
+</div>
+<footer>
+  <img src="1111.png" alt="balloun4">
+   <div id="lastdiv">
+  
+       <p>&copy; all rights are reserved </p>
+     
+     
+
+  <div id="logoss">
+  <table id="table2">
+   <tr>
+   <td> <img class="icons" src="fb.jpg" alt="facebook"> </td>
+   <td> <img class="icons" src="insta.jpg" alt="insta"></td></tr>
+   <tr>
+       <td> <img  class="icons" src="tweet.jpg" alt="tweet"> </td>
+       <td> <img class="icons" src="in.jpg" alt="linkedin"></td>
+   </tr>
+
+</table>
+</div>
+
+</div>
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+</body>
+</html> 
